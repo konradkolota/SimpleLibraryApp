@@ -1,7 +1,6 @@
 package com.kk.springapp.domain;
 
 import javax.persistence.*;
-import javax.transaction.UserTransaction;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -25,12 +24,21 @@ public class Publisher {
     public Publisher() {
     }
 
+
     public Set<Book> getBooks() {
         return books;
     }
 
     public void setBooks(Set<Book> books) {
         this.books = books;
+    }
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
     }
 
     public String getName() {
